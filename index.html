@@ -15,46 +15,46 @@
 </head>
 <body>
     <header>
-        <div  class="flex justify-between md:mx-[40px] mx-[25px] my-[20px] items-center bg-white latest">
+        <div id="toggleDiv" class="flex justify-between md:mx-[40px] mx-[25px] my-[20px] items-center bg-white latest">
           <div><img src="Logo.png" alt="" class="l-one2"></div>
           <div>
-              <ul class="lg:flex hidden cabin gap-[20px] items-center">
-                  <li><a class="text-[14px] font-normal text-black foot underline" href="">Home</a></li>
-                  <li><a class="text-[14px] font-normal text-black foot" href="">About <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a></li>
-                  <li><a class="text-[14px] font-normal text-black foot" href="">Pages <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a></li>
-                  <li><a class="text-[14px] font-normal text-black foot" href="">Blog <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a></li>
-                  <li><a class="text-[14px] font-normal text-black foot" href="">Portfolio</a></li>
-                  <li><a class="text-[14px] font-normal text-black foot" href="">Contacts <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a></li>
-                  <a href=""><button class="text-nowrap l-one px-[25px] py-[5px] border-2 rounded-lg border-black hover:bg-black hover:text-white" style="transition:all 0.2s ease-in;">buy now</button></a>
-              </ul>
+            <ul class="lg:flex hidden cabin gap-[20px] items-center">
+              <li><a class="text-[14px] font-normal text-black foot underline" href="">Home</a></li>
+              <li><a class="text-[14px] font-normal text-black foot" href="#section2">About <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a></li>
+              <li><a class="text-[14px] font-normal text-black foot" href="#section4">Pages <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a></li>
+              <li><a class="text-[14px] font-normal text-black foot" href="#section1">Blog <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a></li>
+              <li><a class="text-[14px] font-normal text-black foot" href="#section3">Portfolio</a></li>
+              <li><a class="text-[14px] font-normal text-black foot" href="">Contacts <span class="text-[10px]"><i class="fa-solid fa-angle-down ps-1"></i></span></a></li>
+              <a href=""><button class="text-nowrap l-one px-[25px] py-[5px] border-2 rounded-lg border-black hover:bg-black hover:text-white" style="transition:all 0.2s ease-in;">buy now</button></a>
+            </ul>
           </div>
-          <div class="lg:hidden flex gap-[20px] l-one1 items-center">
-              <a href=""><button class="sm:px-[18px] py-[4px] px-[18px] text-[14px] border-[2px] rounded-lg border-black hover:bg-black hover:text-white" style="transition:all 0.2s ease-in;">buy now</button></a>
-              <div class="nav" id="menuToggle" onclick="handleMenu()"><i class="fa-solid fa-bars" id="barsIcon"></i></div>
+          <div  class="lg:hidden flex gap-[20px] l-one1 items-center ">
+            <a href=""><button class="sm:px-[18px] py-[4px] px-[18px] text-[14px] border-[2px] rounded-lg border-black hover:bg-black hover:text-white" style="transition:all 0.2s ease-in;">buy now</button></a>
+            <div class="nav" id="menuToggle" onclick="handleMenu()"><i class="fa-solid fa-bars" id="barsIcon"></i></div>
+          </div>
         </div>
-    </div>
-        <div id="nav-dialogue" class="hidden fixed bg-white inset-0 z-10 lg:hidden mb-5">
-            <div class="flex  justify-between  mx-[25px] my-[20px]">
+        <div id="nav-dialogue" class="hidden fixed1 lg:hidden mb-5">
+          <div class="flex justify-between mx-[25px] my-[20px]">
             <div><img src="Logo.png" alt="" class="l-one2"></div>
-            <div class=" flex gap-[20px] l-one1 items-center">
-                <a href=""><button class="sm:px-[18px] py-[4px] px-[18px] text-[14px] border-[2px] rounded-lg border-black hover:bg-black hover:text-white" style="transition:all 0.2s ease-in;">buy now</button></a>
-                <div class="nav" id="menuToggle" onclick="handleMenu()"><i class="fa-solid fa-xmark" id="xmarkIcon"></i></div>
+            <div class="flex gap-[20px] l-one1 items-center">
+              <a href=""><button class="sm:px-[18px] py-[4px] px-[18px] text-[14px] border-[2px] rounded-lg border-black hover:bg-black hover:text-white" style="transition:all 0.2s ease-in;">buy now</button></a>
+              <div class="nav" id="menuToggle" onclick="handleMenu()"><i class="fa-solid fa-xmark hidden" id="xmarkIcon"></i></div>
+            </div>
           </div>
-        </div>
-          <div class="block mx-[25px] my-[20px] ">
-              <ul class="cabin">
-                  <li><a class="text-[14px] font-normal text-black pb-[10px] underline" href="">Home</a></li>
-                  <li><a class="text-[14px] font-normal text-black pb-[10px]" href="">About</a></li>
-                  <li><a class="text-[14px] font-normal text-black pb-[10px]" href="">Pages</a></li>
-                  <li><a class="text-[14px] font-normal text-black pb-[10px]" href="">Blog</a></li>
-                  <li><a class="text-[14px] font-normal text-black pb-[10px]" href="">Portfolio</a></li>
-                  <li><a class="text-[14px] font-normal text-black mb-[15px]" href="">Contacts</a></li>
-                 </ul>
+          <div class="block mx-[25px] my-[20px]">
+            <ul class="cabin">
+                <li><a class="text-[14px] font-normal text-black pb-[10px] underline transition-transform transform hover:scale-110 hover:text-black hover:font-bold" href="#">Home</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-black hover:font-bold" href="#section2">About</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-black hover:font-bold" href="#section4">Pages</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-black hover:font-bold" href="#section1">Blog</a></li>
+                <li><a class="text-[14px] font-normal text-black pb-[10px] transition-transform transform hover:scale-110 hover:text-black hover:font-bold" href="#section3">Portfolio</a></li>
+                <li><a class="text-[14px] font-normal text-black mb-[15px] transition-transform transform hover:scale-110 hover:text-black hover:font-bold" href="#">Contacts</a></li>
+              </ul>
               
           </div>
-          
         </div>
       </header>
+      
       
       
 <section class="first relative " style=" background-image: url('header-home.jpg') ; height : auto;;
@@ -111,11 +111,11 @@
 
 </section>
 <div class="border-b-[1px] text-[#212529] xl:max-w-[740px] lg:w-[560px] md:w-[460px] w-[250px] mx-auto sm:my-[100px] first-b my-[80px]"></div>
-<section class="screen mx-auto lg:flex  third lg:items-center ">
+<section id="section2" class="screen mx-auto lg:flex  third lg:items-center ">
     <div >
         <img src="homeagency-section-1.png" alt="" class=" md:h-[680px] lg:h-[340px] xl:h-[100%]  escape">
     </div>
-    <div class=" xl:w-[546px] lg:w-[400px] w-auto third-text  mt-[16px] animate-me hidden1">
+    <div  class=" xl:w-[546px] lg:w-[400px] w-auto third-text  mt-[16px] animate-me hidden1">
         <h8 class=" text-[12px]  sm:text-[16px]  text-[#222222] lg:font-medium md:font-light cabin ">About Us</h8>
         <h1 class=" text-[26px] xl:text-[40px] md:text-[35px]  pb-[20px] font-medium  text-[#222220] cabin mt-[24px] leading-[1.15] sm:leading-[1.25]">We equip growing companies <br> with outstanding digital products and experiences.</h1>
         <p class="xl:text-[18px] md:text-[16px] text-[15px] sm:font-normal font-light text-[#222220] cabin leading-[1.6]">Holy grail bandwidth stealth niche market freemium buyer traction. A/B testing paradigm shift stealth return on investment android startup user experience bootstrapping funding partnership agile development innovator network effects. Beta series A financing buzz creative.</p>
@@ -137,7 +137,7 @@
     </div>
    </div>
 
-     <section class="screen mx-auto cabin sm:flex block  items-center xl:gap-[220px] lg:gap-[100px] md:gap-[40px]  sm:pb-[100px] pb-[60px] "> 
+     <section id="section4" class="screen mx-auto cabin sm:flex block  items-center xl:gap-[220px] lg:gap-[100px] md:gap-[40px]  sm:pb-[100px] pb-[60px] "> 
     <div class="mt-[50px] animate-me hidden1" >
         <h1 class="xl:text-[18px] md:text-[17px] xl:font-medium md:font-normal text-[#222222] leading-[1.6] cabin mb-[16px]">Mobile App Development</h1>
         <div>
@@ -181,7 +181,7 @@
         
 </div>
 </section>
-<section class="sm:mt-[100px] mt-[60px] screen mx-auto">
+<section id="section3" class="sm:mt-[100px] mt-[60px] screen mx-auto">
 <h6 class="sm:text-[16px] text-[14px] text-[#222222] font-medium cabin">Case Studies</h6>
 <div class=" block sm:flex items-center justify-between  arrow mb-[70px] ">
     <div >
@@ -243,7 +243,7 @@
     </div>
 
 </section>
-<section class="screen mx-auto sm:my-[120px] my-[70px]">
+<section id="section1 " class="screen mx-auto sm:my-[120px] my-[70px]">
     <h6 class="sm:text-[16px] text-[14px] text-black font-medium cabin pb-[10px] ">Our blog</h6>
 <div class="sm:flex  items-center justify-between  arrow mb-[70px]">
     <div class="lg:w-[480px] md:w-[320px]" >
