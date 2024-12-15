@@ -42,11 +42,13 @@ $('.responsive').slick({
     ]
 });
 
-const navDialogue = document.getElementById('nav-dialogue');
+const navDialogue = document.getElementById('nav-dialogue'); 
 const barsIcon = document.getElementById('barsIcon');
+ const xmarkIcon = document.getElementById('xmarkIcon');
 function handleMenu() {
     navDialogue.classList.toggle('hidden');
     barsIcon.classList.toggle('hidden');
+    xmarkIcon.classList.toggle('hidden');
 
 }
 
