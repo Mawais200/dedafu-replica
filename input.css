@@ -450,3 +450,26 @@ font-size: 25px;
   transform:scale(1) ; /* Move out of screen to the right */
   opacity: 1; /* Fade out */ 
 }
+.hidden { 
+  display: none;
+}
+
+.fixed1 { 
+   top: 0;
+  left: 0; 
+  width: 100vw; 
+  height: 70vh; /* Adjust to cover only half of the screen */
+  z-index: 10;
+  background-color: white;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.relative { 
+  position: relative; 
+  z-index: 0; 
+}
+
+#barsIcon.hidden, #xmarkIcon.hidden, #toggleDiv.hidden { 
+  display: none; 
+}
+
